@@ -14,7 +14,6 @@ composer install
 
 - Doc <https://github.com/namnv609/timezonedb-php-api>
 
-
 ## Implemention
 
 ```PHP
@@ -22,7 +21,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use NNV\TimeZoneDB;
 
-$tzDB = new TimeZoneDB(<TimeZoneDB API Key>); // get API KEY From here https://timezonedb.com/
+$tzDB = new TimeZoneDB({API_Key}); // get API KEY From here https://timezonedb.com/
 
 $convertTimeZoneParams = [
     "from"  => "America/Los_Angeles",
@@ -32,3 +31,8 @@ $convertTimeZoneParams = [
 ];
 $tzDB->convertTimeZone($convertTimeZoneParams);
 ```
+
+## GET {API_Key}
+
+* After login to [timezonedb](https://timezonedb.com), find key on dashboard.
+![Screenshot 1](https://www.web-xperts.xyz/api/timezone/1.png)
